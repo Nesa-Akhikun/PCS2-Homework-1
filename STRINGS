@@ -1,0 +1,64 @@
+def split_and_join(line):
+    string = '-'.join((line.split()))
+    return(string)
+    
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
+    
+    
+    
+    
+    def mutate_string(string, position, character):
+    a = list(string)
+    a[position] = character
+    return(''.join(a))
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
+    
+    
+    
+    def count_substring(string, sub_string):
+    count=0
+    string=list(string)
+    new_string=string.copy()
+    new_string=''.join(new_string)
+    for i in range(len(string)):
+        if new_string.startswith(sub_string):
+            count+=1
+            new_string=list(new_string)
+            new_string.pop(0)
+            new_string=''.join(new_string)
+        else:
+            new_string=list(new_string)
+            new_string.pop(0)
+            new_string=''.join(new_string)
+    return count
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
+    
+    
+    
+    
+    
+    
+  import textwrap
+
+def wrap(string, max_width):
+    wrapped=textwrap.TextWrapper(width=max_width)
+    return "\n".join(wrapped.wrap(string))
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
