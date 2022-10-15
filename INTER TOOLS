@@ -1,0 +1,51 @@
+from itertools import permutations
+
+s=list(map(str, input().split()))
+p=list(permutations(s[0], int(s[1])))
+for i in sorted(p):
+    print(''.join(i))
+
+
+
+
+
+
+from itertools import combinations as cb
+s, k = input().split()
+s = sorted(s)
+for i in range(1, int(k)+1):
+    print(*map("".join, cb(s, i)), sep="\n")
+
+
+
+
+
+from itertools import groupby
+
+x=list(map(str, input()))
+g=[]
+for k,i in groupby(x):
+    item = len(list(i)), int(k[0])
+    g.append(f'{item} ')
+    
+print(''.join(g))
+
+
+
+
+
+
+from itertools import product
+
+K,M=map(int,input().split())
+list_elements=[]
+for l in range(K):
+    Ni, *elements=map(int,input().split())
+    list_elements.append(elements)
+
+max_=0
+for l in product(*list_elements):
+    res=sum([l[_]**2 for _ in range(K)])
+    if res%M > max_:
+        max_=res%M
+print(max_)
