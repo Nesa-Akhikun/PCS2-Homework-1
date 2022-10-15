@@ -1,0 +1,54 @@
+m,n=input().split()
+arr=list(input().split())
+A=set(input().split())
+B=set(input().split())
+happiness=0
+for i in arr:
+    if i in A:
+        happiness+=1
+    elif i in B:
+        happiness-=1
+print(happiness)
+
+
+
+
+
+s =set()
+n = int(input())
+set1= set(map(int,input().split()))
+m = int(input())
+set2= set(map(int,input().split()))
+for a in set1.difference(set2):
+    s.add(a)
+for b in set2.difference(set1):
+    s.add(b)
+for i in sorted(s):
+    print(i)
+
+
+
+
+_ = int(input())
+a = set(map(str, input().split()))
+for _ in range(int(input())):
+    (fun, _), val = input().split(), input().split()
+    eval(f'a.{fun}({set(val)})')
+print(sum(map(int, a)))
+
+
+
+
+
+
+t = int(input())
+for i in range(t):
+    len_a = int(input())
+    a = set(map(str,input().split()))
+    len_b = int(input())
+    b = set(map(str,input().split()))
+    if len(a.difference(b)) > 0:
+        print(False)
+    else:
+        print(True)
+        
