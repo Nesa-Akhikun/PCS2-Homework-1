@@ -1,0 +1,49 @@
+from math import atan, degrees
+
+ab=float(input())
+bc=float(input())
+
+# MBC is the same as MCB
+mcb_theta=degrees(atan(ab/bc))
+print(f'{round(mcb_theta)}\u00B0')
+
+
+
+
+
+
+a = int(input())
+b = int(input())
+
+class Div_Mode:
+    def __init__(self,numA,numB):
+        self.numA = numA
+        self.numB = numB
+        print(numA//numB)
+        print(numA%numB)
+    def __str__(self):
+        return f"({self.numA//self.numB}, {self.numA%self.numB})"
+
+p1 = Div_Mode(a,b)
+
+print(p1)
+
+
+
+
+
+
+
+a=int(input())
+b=int(input())
+m=int(input())
+x=a**b
+print(x)
+print(x%m)
+
+
+
+
+
+if __name__ == "__main__":
+  print(sum([pow(int(input()),int(input())) for _ in range(2)]))
