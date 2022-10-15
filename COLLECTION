@@ -1,0 +1,63 @@
+n = int(input())
+column_names = input().split()
+sum = 0
+
+for _ in range(n):
+    sum += int(input().split()[column_names.index("MARKS")])
+
+print(sum/n) 
+
+
+
+
+
+
+
+n = int(input())
+dic = {}
+
+for i in range(n):
+    a = input().split()
+    item = " ".join(a[:-1])
+    price = int(a[-1])
+
+    dic[item] = price + dic.get(item, 0)
+
+for i, j in dic.items():
+    print(i, j)
+
+
+
+
+
+
+
+from collections import Counter
+
+count = int(input())
+word_list = Counter( (input() for _ in range(count)) )
+
+
+print(len(word_list))        
+print(*word_list.values())
+
+
+
+
+
+
+
+import math
+import os
+import random
+import re
+import sys
+
+
+from collections import Counter
+
+if __name__ == '__main__':
+    s = sorted(input())
+    count_dict = Counter(s)
+    for k, v in count_dict.most_common(3):
+        print(k,v)
