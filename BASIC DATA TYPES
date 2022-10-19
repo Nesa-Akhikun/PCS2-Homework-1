@@ -11,3 +11,82 @@ print(output)
 
 
 
+
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    output = sum(student_marks[query_name])/len(student_marks[query_name])
+    output = "{:.2f}".format(output)
+    print(output)
+   
+   
+   
+   
+   
+   
+if __name__ == '__main__':
+    list1, list2 = [],[]
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        list1.append([name,score])
+        list2.append(score)
+    list1 = sorted(list1,key = lambda x: x[1])
+    list2 = sorted(list(set(list2)))
+    SecLow = list2[1]
+    list3 = [x[0] for x in list1 if x[-1] == SecLow]
+    list3 = sorted(list3)
+    for names in list3:
+        print(names)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    if __name__ == '__main__':
+    N = int(input())
+    L = []
+    for _ in range(N):
+        com, *args = input().split()
+        args = [ int(a) for a in args]
+        if com == "insert":
+            L.insert(args[0], args[1])
+        elif com == "print":
+            print(L)
+        elif com == "remove":
+            L.remove(args[0])
+        elif com == "append":
+            L.append(args[0])
+        elif com == "sort":
+            L.sort()
+        elif com == "pop":
+            L.pop()
+        elif com == "reverse":
+            L.reverse()
+        else:
+            continue
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            
+            
+            
+            
+            
+            
+         
+   
