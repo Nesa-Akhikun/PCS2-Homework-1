@@ -82,11 +82,15 @@ if __name__ == '__main__':
  
  
  
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    
+arr1= list(arr)
+win = max(arr1)
+
+list = [arr1[i] for i in range(0,n) if (win - arr1[i] != 0)]
+runup = max(list)
+print(runup)            
             
-            
-            
-            
-            
-            
-         
-   
+       
