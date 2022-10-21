@@ -1,3 +1,5 @@
+Collections.namedtuple():
+
 n = int(input())
 column_names = input().split()
 sum = 0
@@ -12,6 +14,7 @@ print(sum/n)
 
 
 
+Collections.OrderedDict():
 
 n = int(input())
 dic = {}
@@ -31,6 +34,7 @@ for i, j in dic.items():
 
 
 
+Word Order:
 
 from collections import Counter
 
@@ -46,6 +50,7 @@ print(*word_list.values())
 
 
 
+Company Logo:
 
 import math
 import os
