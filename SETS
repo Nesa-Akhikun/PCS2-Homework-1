@@ -1,3 +1,5 @@
+No Idea!:
+
 m,n=input().split()
 arr=list(input().split())
 A=set(input().split())
@@ -14,6 +16,8 @@ print(happiness)
 
 
 
+Symmetric Difference:
+
 s =set()
 n = int(input())
 set1= set(map(int,input().split()))
@@ -29,6 +33,8 @@ for i in sorted(s):
 
 
 
+Set Mutations:
+
 _ = int(input())
 a = set(map(str, input().split()))
 for _ in range(int(input())):
@@ -40,6 +46,7 @@ print(sum(map(int, a)))
 
 
 
+Check Subset:
 
 t = int(input())
 for i in range(t):
