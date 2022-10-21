@@ -1,3 +1,5 @@
+Find Angle MBC:
+
 from math import atan, degrees
 
 ab=float(input())
@@ -11,6 +13,7 @@ print(f'{round(mcb_theta)}\u00B0')
 
 
 
+Mod Divmod:
 
 a = int(input())
 b = int(input())
@@ -33,6 +36,7 @@ print(p1)
 
 
 
+Power - Mod Power:
 
 a=int(input())
 b=int(input())
@@ -45,5 +49,10 @@ print(x%m)
 
 
 
+Integers Come In All Sizes:
+
 if __name__ == "__main__":
   print(sum([pow(int(input()),int(input())) for _ in range(2)]))
+  
+  
+  
