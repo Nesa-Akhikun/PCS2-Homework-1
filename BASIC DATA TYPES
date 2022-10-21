@@ -1,3 +1,5 @@
+List Comprehensions:
+
 if __name__ == '__main__':
     x = int(input())
     y = int(input())
@@ -11,6 +13,8 @@ print(output)
 
 
 
+
+Finding the percentage:
 
 if __name__ == '__main__':
     n = int(input())
@@ -27,7 +31,8 @@ if __name__ == '__main__':
    
    
    
-   
+
+Nested Lists:
    
 if __name__ == '__main__':
     list1, list2 = [],[]
@@ -50,7 +55,8 @@ if __name__ == '__main__':
         
         
         
-        
+    
+    Lists:
         
     if __name__ == '__main__':
     N = int(input())
@@ -80,7 +86,8 @@ if __name__ == '__main__':
  
  
  
- 
+
+Find the Runner-Up Score!:
  
 if __name__ == '__main__':
     n = int(input())
