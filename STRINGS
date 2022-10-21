@@ -1,3 +1,5 @@
+String Split and Join:
+
 def split_and_join(line):
     string = '-'.join((line.split()))
     return(string)
@@ -8,7 +10,9 @@ if __name__ == '__main__':
     print(result)
     
     
-    
+
+
+Mutations:
     
     def mutate_string(string, position, character):
     a = list(string)
@@ -21,7 +25,11 @@ if __name__ == '__main__':
     s_new = mutate_string(s, int(i), c)
     print(s_new)
     
-    
+
+
+
+
+Find a string:
     
     def count_substring(string, sub_string):
     count=0
@@ -50,7 +58,9 @@ if __name__ == '__main__':
     
     
     
-    
+
+
+Text Wrap:
     
   import textwrap
 
